@@ -31,14 +31,10 @@ const App = () => {
     const updatedPointsArray = [...pointsarray]
     updatedPointsArray[selected] += 1
     setPointsArray(updatedPointsArray)
-    console.log(mostVotes)
     if (updatedPointsArray[selected] > mostVotes){
       setMostVotes(updatedPointsArray[selected])
       setMostVotesIndex(selected)
     }
-    console.log(mostVotes)
-
-    console.log(mostVotes)
   }
 
   return (
